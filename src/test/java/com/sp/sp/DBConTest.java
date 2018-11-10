@@ -1,11 +1,10 @@
 package com.sp.sp;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-import java.sql.Connection;
 import java.sql.SQLException;
-
-import javax.sql.DataSource;
+import java.util.List;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,17 +12,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.sp.sp.dao.AwsTestDAO;
+import com.sp.sp.vo.AwsTestVO;
+
+import lombok.extern.slf4j.Slf4j;
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
+@Slf4j
 public class DBConTest {
 
 	@Autowired
-	private DataSource ds;
+	private AwsTestDAO atdao;
 	
 	@Test
 	public void test() throws SQLException {
-		Connection con = ds.getConnection();
-		assertNotNull(con);
+		assertEquals(1, atdao.selectAwsTestList().size());
 	}
 
 }
