@@ -21,13 +21,13 @@ import lombok.extern.slf4j.Slf4j;
 @ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
 @Slf4j
 public class DBConTest {
-
-	@Autowired
-	private AwsTestDAO atdao;
-	
-	@Test
-	public void test() throws SQLException {
-		assertEquals(1, atdao.selectAwsTestList().size());
-	}
+//
+//	@Autowired
+//	private AwsTestDAO atdao;
+//	
+//	@Test
+//	public void test() throws SQLException {
+//		assertEquals(1, atdao.selectAwsTestList().size());
+//	}
 
 }
