@@ -8,7 +8,7 @@
 <h1>
 	Hello world!  
 </h1>
-이 파일을 수정했다고 칩시다.
+나 분명히 이파일 수정했다!!
 <P>  The time on the server is ${serverTime}. </P>
 </body>
 </html>
