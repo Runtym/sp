@@ -8,6 +8,6 @@
 <h1>
 	Hello world!  
 </h1>asdfadsf
-<P>  The time on the server is ${serverTime}. </P>
+<P>  The time onasd the server is ${serverTime}. </P>
 </body>
 </html>
