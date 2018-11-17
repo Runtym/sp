@@ -6,8 +6,9 @@
 </head>
 <body>
 <h1>
-	Hello world!  
-</h1>asdfadsf
-<P>  The time onasd the server is ${serverTime}. </P>
+내가 여기서 푸쉬 하면<br>
+서버에서 빌드되고<br>
+배포까지 자동이야~~
+</h1>
 </body>
 </html>
