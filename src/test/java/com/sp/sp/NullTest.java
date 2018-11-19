@@ -1,5 +1,7 @@
 package com.sp.sp;
 
+import static org.junit.Assert.assertNull;
+
 import org.junit.Test;
 
 import lombok.extern.slf4j.Slf4j;
@@ -11,8 +13,6 @@ public class NullTest {
 	
 	@Test
 	public void nullTest() {
-		if(test.equals("a")) {
-			System.out.println("test is a");
-		}
+		assertNull(test);
 	}
 }
