@@ -15,8 +15,14 @@ public class AwsTestController {
 
 	@Autowired
 	private AwsTestService ats;
+	private String url;
+	
+	
 	@GetMapping("/awstests")
 	public @ResponseBody List<AwsTestVO> getAwsTestList(){
+		if("/".equals(url)) {
+			
+		}
 		return ats.selectAwsTestList();
 	}
 }
